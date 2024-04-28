@@ -34,4 +34,14 @@
 - Add new Character - POST `http://localhost:4300/characters`
 - Delete a Character - DELETE `http://localhost:4300/characters/{id}`
 
-## ON LOCAL VENV ONLY CHANGE THE PORT FOR 4000
+- ON LOCAL VENV ONLY CHANGE THE PORT FOR 4000
+
+### PROJECT STRUCTURE
+- DIRECTORIES STRUCTURE INSIDE APP DIRECTORY:
+- application - contain the server instance and the routes handler
+- domain - contain the entities and the use cases
+- externals - contain the db model and the repository 
+- serializers - contain the DTOs 
+
+
+
