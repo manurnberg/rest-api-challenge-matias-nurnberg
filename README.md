@@ -3,7 +3,7 @@
 ### USING CLEAN ARCHITECTURE
 
 - Download and install Python 3.12 for your OS
-- Crete a project directory and move into
+- Create a project directory and move into
 - Install virtualenv: `pip install virtualenv`
 - Create the virtual env: `python3 -m venv venv`
 
