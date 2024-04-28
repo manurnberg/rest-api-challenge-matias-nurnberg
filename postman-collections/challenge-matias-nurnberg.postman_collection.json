@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "32235803-3a24-47ef-8be0-08ce35ced091",
+		"name": "challenge-matias-nurnberg",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "server ping on docker",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4300/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all characters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4300/characters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get character by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4300/characters/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"characters",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add new character",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Luke Skywalker\",\n    \"height\": 172,\n    \"mass\": 77,\n    \"hair_color\": \"blond\",\n    \"skin_color\": \"fair\",\n    \"eye_color\": \"blue\",\n    \"birth_year\": 1998\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4300/characters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete character",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4300/characters/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"characters",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
