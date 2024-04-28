@@ -62,7 +62,7 @@ instance/
 *.sql
 
 # SQLite database files
-*.sqlite3
+*.sqlite
 
 # Environment variables file
 .env

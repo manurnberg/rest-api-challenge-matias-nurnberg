@@ -15,26 +15,22 @@ class UseCases:
         try:
             return self.repository.get_by_id(id)
         except Exception as e:
-            # Manejar excepciones que vienen del repository
             raise RuntimeError(f"Error al obtener el elemento con ID {id}: {e}")
 
     def add(self, data):
         try:
             return self.repository.add(data)
         except Exception as e:
-            # Manejar excepciones que vienen del repository
             raise RuntimeError(f"Error al agregar un elemento: {e}")
 
     def delete(self, id):
         try:
             return self.repository.delete(id)
         except Exception as e:
-            # Manejar excepciones que vienen del repository
             raise RuntimeError("Character not found")
 
     def get_by_attribute(self, attribute):
         try:
             return self.repository.get_by_attribute(attribute)
         except Exception as e:
-            # Manejar excepciones que vienen del repository
             raise RuntimeError(f"Error al obtener elementos por atributo: {e}")

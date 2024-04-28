@@ -1,8 +1,8 @@
 from flask import jsonify, request, Blueprint
 import json
+
 from domain.entities.character import Character
 from externals.repository.repository import Repository
-from serializers.serializer import CharacterJsonEncoder
 from serializers.DTOs.characterDTO import CharacterDTO
 from serializers.DTOs.charactersDTO import CharactersDTO
 from serializers.DTOs.new_characterDTO import NewCharacterDTO
@@ -12,7 +12,7 @@ from domain.use_cases.use_cases import UseCases
 blueprint = Blueprint('blueprint', __name__)
 repository = Repository
 use_case = UseCases(repository)
-jsonEnconder = CharacterJsonEncoder
+
 
 
 ## sever status route health check

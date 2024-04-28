@@ -1,6 +1,7 @@
 from externals.database.models.character import Character
 from externals.database.models.character import db
 
+#repository implementation for SQLAlchemy ORM 
 class Repository:
 
     @staticmethod
