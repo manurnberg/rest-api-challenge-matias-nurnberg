@@ -22,4 +22,16 @@
 
 - CREATE DOCKER IMAGE : `docker build -t challenge .`
 - RUN DOCKER CONTAINER : `docker run -it -p 4300:4000 --name challenge_container challenge`
- `add -d flag, optional if want to run container detached`
+- add -d flag, optional if want to run container detached
+
+### API REST POSTMAN COLLECTIONS TO TRY ENDPOINTS 
+- THE COLLECTIONS ARE JSON OBJECTS THAT CAN BE IMPORTED TO POSTMAN AND ARE STORAGE ON POSTMAN-COLLECTIONS DIRECTORY ON THE ROOT OF THE PROJECT
+
+### ENDPOINTS ON DOCKER
+- Server status - GET `http://localhost:4300/`
+- Get all Characaters - GET `http://localhost:4300/characters`
+- Get a Character by Id  - GET `http://localhost:4300/characters/{id}`
+- Add new Character - POST `http://localhost:4300/characters`
+- Delete a Character - DELETE `http://localhost:4300/characters/{id}`
+
+## ON LOCAL VENV ONLY CHANGE THE PORT FOR 4000
